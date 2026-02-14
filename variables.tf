@@ -1,6 +1,6 @@
 variable "aws_region" {
   type    = string
-  default = "us-east-1"
+  default = "Europe"
 }
 variable "instance_type" {
   type    = string
@@ -11,7 +11,7 @@ variable "ami_id" {
 
   validation {
     condition     = length(trimspace(var.ami_id)) > 0
-    error_message = "ami-0b6c6ebed2801a5cb"
+    error_message = "ami-073130f74f5ffb161"
   }
 }
 variable "existing_key_pair_name" {
